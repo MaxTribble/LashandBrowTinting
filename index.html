@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LashandBrowTinting</title>
+</head>
+<body  style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+background-color:whitesmoke;
+margin-left: 70px;
+font-size: 25px;
+line-height: 2;">
+    <form id="form">
+        <!-- <P style="page-break-before: always"> -->
+        <H2 style="text-align: center; margin: 20px 0px;">Lash and Brow Tinting Consent Form</H2>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="address">Address:</label>
+        <input type="text" id="address" name="address"><br>
+
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city"> <br>
+
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state">
+
+        <label for="zip">Zip:</label>
+        <input type="text" id="zip" name="zip"><br>
+
+        <label for="mNumber">Home/Cell Number:</label>
+        <input type="number" id="mNumber" name="mNumber">
+
+        <label for="wNumber">Work Number:</label>
+        <input type="number" id="number" name="wNumber">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email"> <br>
+
+        <label for="birthday">Birthday:</label>
+
+        <label for="birthdayM">Month:</label>
+        <input type="number" id="birthdayM" name="birthdayM">
+
+        <label for="birthdayD">Day:</label>
+        <input type="number" id="birthdayD" name="birthdayD"> <br>
+
+        <label for="marketing">How did you hear about me?</label>
+        <input type="text" name="marketing" id="marketing">
+        
+        <ul>
+
+            <li>Tint will last 3 to 4 weeks depending on growth and care of the brows / lashes.</li>
+
+            <li><label for="previousTinting">Have you ever had tinting before?</label>
+            <select name="patchTest" id="patchTest">
+                <option value="" disabled selected hidden>select</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select> </li>
+
+            <li><label for="tintReaction">Have you ever had an allergic reaction?</label>
+            <select name="tintReaction" id="tintReaction">
+                <option value="" disabled selected hidden>select</option>
+                <option value="yes">yes</option>
+                <option value="no">no</option>
+            </select> </li>
+
+            <label for="specificReaction">Reaction if any</label>
+            <input type="text" name="specificReaction" id="specificReaction">
+        </ul>
+
+        <h4><u>Contraindications</u></h4>
+
+        <div><b>Select any that apply:</b></div>
+
+        <label for="conditions"></label>        
+        <input type="checkbox" name="conditions" value="conjunctivitis">Conjunctivitis<br>
+        <input type="checkbox" name="conditions" value="eczema">Eczema in lash or brow hairs<br>
+        <input type="checkbox" name="conditions" value="psoriasis">Psoriasis in the eye area<br>
+        <input type="checkbox" name="conditions" value="skinIrritation">Skin irritation<br>
+        <input type="checkbox" name="conditions" value="pregnant">Pregnant, first trimester<br>
+
+        <ul>
+
+            <li><label for="patchTest">I would like to waive a 24 hour patch test.</label>
+                <select name="patchTest" id="patchTest">
+                    <option value="" disabled selected hidden>select</option>
+                    <option value="yes">yes</option>
+                    <option value="no">no</option>
+                </select> 
+            </li>
+
+            <li>
+                <label for="medications">List any medications you are taking including over-the-counter herbs, vitamins:</label>
+                <input type="text" name="medications" id="medications"> <br>
+            </li>
+
+            <li>
+                <label for="allergies">List any allergies you have:</label>
+                <input type="text" name="allergies" id="allergies"> <br>
+            </li>
+
+            <li>
+                <p>Every precaution will be made to ensure your safety and well-being before during and after your tinting.</p>
+            </li>
+    
+        </ul>
+
+        <p><b>*By checking the box, you agree you have read and accept the following statements below.</b></p>
+
+        <input type="checkbox" name="initial">
+        <label for="initial">I am not wearing contacts during the tinting process.</label> <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial"></label>I understand that tinting lashes or brows has some inherent risk of irritation to the orbital eye area. <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial"></label>I understand that if the tinting agent, developer, or mixture or both accidentally comes into contact with my eyes, my eyes woll be flushed with water and medical attention may be required.<br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial"></label>I understand some irritation, itching or burning may occur to the skin which comes in contact with the tinting agent. <br>
+
+        <input type="checkbox" name="initial">
+        <label for="initial"></label>I understand there may be some residual dark staining left on the skin following the tinting process of my lashes, brows or both. This will fade and go away within a short time period. <br>
+
+        <p>My e-signature acknowledges that I have read and agree to recieve the treatment(s) listed above and that I will adhere to all of the aformentiond statements that I have reviewed. If I have any concerns, I will address these with my technician before, during and after the tinting service</p>
+
+        <h4>Signature:</h4>
+
+        
+        <input type="text" name="signature1" id="signature1" style="font-family: cursive;">
+        <label for="signature1">Date: <span id="currentDate"></span></u> </label>
+        
+        <!-- <button class="write">Write Electronic Signature</button> -->
+
+        <!-- <div id="sig"></div> -->
+        <!-- <p><span><a href="#" class="clear-button hidden">Clear</a></span><span><a href="#" class="done hidden" style="color: #000; margin-left: 250px;">Done</a></span></p>
+        <canvas height="150" width="550" class="signature-pad hidden"></canvas> -->
+
+
+</form>
+<div id="button" style="text-align: center;
+cursor: pointer;
+border: 2px solid black;
+padding: 4px;
+margin: auto;
+max-width: fit-content;
+border-radius: 10px;
+font-size: 40px;">Done</div>
+
+<div class="hidden" id="loading"style="z-index: 7; position: fixed; font-size: 50px; background-color: lightgray; top: 50%; left: 30%; border: 3px solid black; padding: 40px; border-radius: 15px;">Processing...</div>
+<div class="hidden" id="fileSave"style="z-index: 7; position: fixed; font-size: 50px; background-color: lightgray; top: 50%; left: 30%; border: 3px solid black; padding: 40px; border-radius: 15px">File Saved!</div>
+<style>
+    .hidden{
+        display: none;
+    }
+
+    :root {
+    --primary-color: #000;
+    }
+
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        line-height: 1.4;
+        padding: 1rem;
+    }
+    .signature-pad-form {
+        max-width: 300px;
+        margin: 0 auto;
+    }
+    .signature-pad {
+        cursor: url(pen.png) 1 26, pointer;
+        border: 2px solid var(--primary-color);
+        border-radius: 4px;
+    }
+    .clear-button {
+        color: var(--primary-color);
+    }
+    .submit-button {
+        width: 100%;
+        background-color: var(--primary-color);
+        border: none;
+        padding: 0.5rem 1rem;
+        color: #fff;
+        cursor: pointer;
+        margin-top: 2rem;
+    }
+    .overflow{
+        overflow:hidden;
+    }
+    
+</style>
+</body>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js" integrity="sha512-YcsIPGdhPK4P/uRW6/sruonlYj+Q7UHWeKfTAkBW+g83NKM+jMJFJ4iAPfSnVp7BKD4dKMHmVSvICUbE/V1sSw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> 
+
+<script>
+    var ok = document.getElementById('button');
+    var body = document.querySelector('body')
+    var labels = document.getElementsByTagName('LABEL');
+    var input = document.getElementsByTagName('INPUT');
+    var load = document.getElementById('loading');
+    var done = document.getElementById('fileSave');
+    var doneButton = document.querySelector('.done')
+    var style = document.createElement('style');
+    var name = document.getElementById('name');
+    var date = document.getElementById('currentDate')
+    n =  new Date();
+    y = n.getFullYear();
+    m = n.getMonth() + 1;
+    d = n.getDate();
+    document.getElementById("currentDate").innerHTML = m + "/" + d + "/" + y;
+    // const sig = document.getElementById('sig');
+    // const canvas = document.querySelector('canvas');
+    // const form = document.querySelector('#form');
+    // const clearButton = document.querySelector('.clear-button');
+    // const write = document.querySelector('.write');
+    // const ctx = canvas.getContext('2d');
+    // let writingMode = false;
+
+    // write.addEventListener('click', (event) => {
+    //     event.preventDefault()
+    //     canvas.classList.remove('hidden')
+    //     clearButton.classList.remove('hidden')
+    //     doneButton.classList.remove('hidden')
+    //     write.classList.add('hidden')
+    //     body.classList.add('overflow')
+    // })
+    // const clearPad = () => {
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // }
+
+    // doneButton.addEventListener('click', (event) => {
+    //     event.preventDefault();
+    //     body.classList.remove('overflow')
+    //     const imageURL = canvas.toDataURL();
+    //     const image = document.createElement('img');
+    //     image.src = imageURL;
+    //     image.height = canvas.height;
+    //     image.width = canvas.width;
+    //     image.style.display = 'block';
+    //     canvas.classList.add('hidden')
+    //     doneButton.classList.add('hidden')
+    //     clearButton.classList.add('hidden')
+    //     write.classList.remove('hidden')
+    //     while (sig.firstChild) {
+    //     sig.removeChild(sig.lastChild);
+    //     }
+    //         sig.appendChild(image);
+    //         clearPad();
+    //     })
+
+    // const getCursorPosition = (event) => {
+    //     positionX = event.clientX - event.target.getBoundingClientRect().x;
+    //     positionY = event.clientY - event.target.getBoundingClientRect().y;
+    //     return [positionX, positionY];
+    // }
+
+    // const handlePointerDown = (event) => {
+    //     writingMode = true;
+    //     ctx.beginPath();
+    //     const [positionX, positionY] = getCursorPosition(event);
+    //     ctx.moveTo(positionX, positionY);
+    // }
+    // const handlePointerUp = () => {
+    //     writingMode = false;
+    // }
+
+    // const handlePointerMove = (event) => {
+    //     if (!writingMode) return
+    //     const [positionX, positionY] = getCursorPosition(event);
+    //     ctx.lineTo(positionX, positionY);
+    //     ctx.stroke();
+    // }
+
+    // clearButton.addEventListener('click', (event) => {
+    //     event.preventDefault();
+    //     ctx.clearRect(0, 0, canvas.width, canvas.height);
+    // })
+
+    // ctx.lineWidth = 2;
+    // ctx.lineJoin = ctx.lineCap = 'round';
+
+    // canvas.addEventListener('pointerdown', handlePointerDown, {passive: true});
+    // canvas.addEventListener('pointerup', handlePointerUp, {passive: true});
+    // canvas.addEventListener('pointermove', handlePointerMove, {passive: true});
+
+    ok.addEventListener('click', async function(event){      
+        event.preventDefault()
+        console.log(form)
+        var name = form.name.value + "LashandBrowTinting"
+        var opt = {
+        margin:       1,
+        filename:     name,
+        image:        { type: 'jpeg=', quality: 0.98 },
+        html2canvas:  { scale: 2 },
+        jsPDF:        { unit: 'in', format: 'letter', orientation: 'portrait' }
+    };
+        await load.classList.remove('hidden');
+        await html2pdf().set(opt).from(form).save();
+        await load.classList.add('hidden');
+        await done.classList.remove('hidden')
+    })
+
+    done.addEventListener("click", function(){
+        location.reload()
+    })
+ </script> 
+ </html> 
